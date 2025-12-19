@@ -1,4 +1,5 @@
-﻿
+﻿using Catalog.API.DTOs.Request;
+using Catalog.API.DTOs.Response;
 
 namespace Catalog.API.Products.CreateProduct
 {
@@ -14,7 +15,6 @@ namespace Catalog.API.Products.CreateProduct
 
                 return Results.Created($"/products/{response.Id}", response);
             })
-
             .WithName("CreateProduct")
             .Produces<CreateProductResponse>(StatusCodes.Status201Created)
             .ProducesProblem(StatusCodes.Status201Created)

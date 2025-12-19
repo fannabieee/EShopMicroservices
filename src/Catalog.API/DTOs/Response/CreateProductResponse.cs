@@ -1,4 +1,4 @@
-﻿namespace Catalog.API.Products.DTOs.Response
+﻿namespace Catalog.API.DTOs.Response
 {
     public record CreateProductResponse(Guid Id);
 }
